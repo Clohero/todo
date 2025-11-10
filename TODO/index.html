@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>todo</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container_title">
+            <div class="title">TODO LIST</div>
+        </div>
+
+
+        <div class="container_search">
+
+            <form role="search" class="search_form">
+                <input type="search" class="search-input" id="theme2" placeholder="Search note..." aria-label="Поиск">
+                <button type="submit" class="search_button"><img src="Vector.svg" alt="" class="loup"></button>
+            </form>
+
+            <div class="dropdown">
+                <div class="dropdown-toggle" onclick="toggleDropdown()">
+                    <div class="dropdown_text">ALL</div>
+                    <img src="chevron-top.svg" alt="">
+                </div>
+                <div class="dropdown-menu">
+                    <div class="dropdown-item active">All</div>
+                    <div class="dropdown-item">Notes</div>
+                    <div class="dropdown-item">Tasks</div>
+                    <div class="dropdown-item">Reminders</div>
+                    <div class="dropdown-item">Favorites</div>
+                </div>
+            </div>
+
+            <div class="night">
+                <button 
+                type="submit" 
+                class="night_button"
+                id="themeToggle"
+                >
+                <img src="Moon.svg" alt="" class="moon"></button>
+            </div>
+        </div>
+
+        <div class="container_inside"></div>
+
+        <div class="container_note">
+            <div class="str_note">
+                <div class="box1">
+                    <input type="checkbox" class="checbox">
+                    <div class="note_text">NOTE #1</div>
+                </div>
+                <div class="box2">
+                    <img src="Pen.svg" alt="" class="pen">
+                    <img src="trash-svgrepo-com 1.svg" alt="" class="vedro">
+                </div>
+            </div>
+            <div class="str_line"></div>
+
+            <div class="str_note">
+                <div class="box1">
+                    <input type="checkbox" class="checbox">
+                    <div class="note_text">NOTE #2</div>
+                </div>
+                <div class="box2">
+
+                </div>
+            </div>
+            <div class="str_line"></div>
+
+            <div class="str_note">
+                <div class="box1">
+                    <input type="checkbox" class="checbox">
+                    <div class="note_text">NOTE #3</div>
+                </div>
+                <div class="box2">
+
+                </div>
+            </div>
+            <div class="str_line"></div>
+        </div>
+    </div>
+
+
+
+    <script src="aue.js"></script>
+</body>
+
+
+
+</html>
